@@ -8,6 +8,8 @@ Usage (from the phpBB root directory):
 docker run -d --name mysql -e MYSQL_ROOT_PASSWORD='' -e MYSQL_DATABASE='phpbb_tests' -e MYSQL_ALLOW_EMPTY_PASSWORD='yes' mysql
 docker run --rm --link mysql:mysql aanand/wait
 docker run \
+    --rm \
+    -ti \
     --link mysql:mysql \
     --env PHPBB_TEST_DBMS="phpbb\db\driver\mysql" \
     --env PHPBB_TEST_DBHOST="mysql" \
