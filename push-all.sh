@@ -12,3 +12,4 @@ docker push phpbb/php-ut-5.5-postgres
 docker push phpbb/php-ut-5.6-postgres
 
 docker push phpbb/build
+docker push phpbb/build:1

@@ -7,5 +7,5 @@ Bamboo Agent
 To launch the agent with its state container:
 ```
 docker run --name bamboo-agent-state phpbb/bamboo-agent-state
-docker run --privileged -h bamboo-agent -e HOME=/bamboo/home/ -e BAMBOO_SERVER=https://bamboo.phpbb.com/ -d --name bamboo-agent --volume-from bamboo-agent-state phpbb/bamboo-agent-docker
+docker run --privileged -h bamboo-agent -e HOME=/bamboo/home/ -e BAMBOO_SERVER=https://bamboo.phpbb.com/ -d --name bamboo-agent --volumes-from bamboo-agent-state phpbb/bamboo-agent-docker
 ```
