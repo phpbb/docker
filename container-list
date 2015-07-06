@@ -1,0 +1,32 @@
+; phpbb/bamboo-agent-docker bamboo/agent/docker
+; phpbb/bamboo-agent-state bamboo/agent/state
+
+phpbb/php-ut-5.4-mysql:1 php/unit-tests/5.4/mysql/
+phpbb/php-ut-5.5-mysql:1 php/unit-tests/5.5/mysql/
+phpbb/php-ut-5.6-mysql:1 php/unit-tests/5.6/mysql/
+
+phpbb/php-ut-5.4-postgres:1 php/unit-tests/5.4/postgres/
+phpbb/php-ut-5.5-postgres:1 php/unit-tests/5.5/postgres/
+phpbb/php-ut-5.6-postgres:1 php/unit-tests/5.6/postgres/
+
+phpbb/php-ft-5.4-base:1 php/func-tests/5.4/base/
+phpbb/php-ft-5.5-base:1 php/func-tests/5.5/base/
+phpbb/php-ft-5.6-base:1 php/func-tests/5.6/base/
+
+phpbb/php-ft-5.4-mysql:1 php/func-tests/5.4/mysql/
+phpbb/php-ft-5.5-mysql:1 php/func-tests/5.5/mysql/
+phpbb/php-ft-5.6-mysql:1 php/func-tests/5.6/mysql/
+
+phpbb/php-ft-5.4-postgres:1 php/func-tests/5.4/postgres/
+phpbb/php-ft-5.5-postgres:1 php/func-tests/5.5/postgres/
+phpbb/php-ft-5.6-postgres:1 php/func-tests/5.6/postgres/
+
+nicofuma/php-ut-5.4-oracle:1 php/unit-tests/5.4/oracle/
+nicofuma/php-ut-5.5-oracle:1 php/unit-tests/5.5/oracle/
+nicofuma/php-ut-5.6-oracle:1 php/unit-tests/5.6/oracle/
+
+nicofuma/php-ft-5.4-oracle:1 php/func-tests/5.4/oracle/
+nicofuma/php-ft-5.5-oracle:1 php/func-tests/5.5/oracle/
+nicofuma/php-ft-5.6-oracle:1 php/func-tests/5.6/oracle/
+
+phpbb/build:1 php/build/

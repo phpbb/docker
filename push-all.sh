@@ -1,15 +1,8 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-docker push phpbb/bamboo-agent-docker
-docker push phpbb/bamboo-agent-state
+# Push all the images
 
-docker push phpbb/php-ut-5.4-mysql
-docker push phpbb/php-ut-5.5-mysql
-docker push phpbb/php-ut-5.6-mysql
+jobs=$1
+jobs=${jobs:=4}
 
-docker push phpbb/php-ut-5.4-postgres
-docker push phpbb/php-ut-5.5-postgres
-docker push phpbb/php-ut-5.6-postgres
-
-docker push phpbb/build
-docker push phpbb/build:1
+parallel -j $jobs -a container-list ./push.sh
