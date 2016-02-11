@@ -1,4 +1,4 @@
-FROM phpbb/php-ft-5.6-base:latest
+FROM phpbb/php-ft-7.0-base:latest
 MAINTAINER Tristan Darricau <docker@nicofuma.fr>
 
 RUN apt-get update \

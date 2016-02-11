@@ -5,7 +5,7 @@ push_image() {
 
     if [[ ! $DOCKER_PUSH_DRYRUN == 1 ]]
     then
-        log=$(docker push "$1")
+        docker push "$1"
         res=$?
     else
         res=0
@@ -46,6 +46,7 @@ else
     # Has the required tag already been pushed?
     if [[ -z $new || $DOCKER_PUSH_FORCE == 1 ]]
     then
+        push_image "$image:latest"
         push_image "$image:$tag"
         res=$?
     else

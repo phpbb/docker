@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-addgroup phpbb --uid $TEST_GID
+addgroup phpbb --gid $TEST_GID
 adduser --disabled-password --ingroup phpbb --gecos "" --uid $TEST_UID phpbb
 
 echo "Starting php-fpm..."

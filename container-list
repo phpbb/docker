@@ -1,32 +1,49 @@
-; phpbb/bamboo-agent-docker bamboo/agent/docker
-; phpbb/bamboo-agent-state bamboo/agent/state
+;phpbb/bamboo-agent-docker bamboo/agent/docker
+;phpbb/bamboo-agent-state bamboo/agent/state
 
-phpbb/php-ut-5.4-mysql:1 php/unit-tests/5.4/mysql/
-phpbb/php-ut-5.5-mysql:1 php/unit-tests/5.5/mysql/
-phpbb/php-ut-5.6-mysql:1 php/unit-tests/5.6/mysql/
+;phpbb/php-ut-5.4-sqlite:3 php/unit-tests/5.4/sqlite/
+;phpbb/php-ut-5.5-sqlite:3 php/unit-tests/5.5/sqlite/
+;phpbb/php-ut-5.6-sqlite:3 php/unit-tests/5.6/sqlite/
+;phpbb/php-ut-7.0-sqlite:3 php/unit-tests/7.0/sqlite/
 
-phpbb/php-ut-5.4-postgres:1 php/unit-tests/5.4/postgres/
-phpbb/php-ut-5.5-postgres:1 php/unit-tests/5.5/postgres/
-phpbb/php-ut-5.6-postgres:1 php/unit-tests/5.6/postgres/
+;phpbb/php-ut-5.4-mysql:3 php/unit-tests/5.4/mysql/
+;phpbb/php-ut-5.5-mysql:3 php/unit-tests/5.5/mysql/
+;phpbb/php-ut-5.6-mysql:3 php/unit-tests/5.6/mysql/
+;phpbb/php-ut-7.0-mysql:3 php/unit-tests/7.0/mysql/
 
-phpbb/php-ft-5.4-base:1 php/func-tests/5.4/base/
-phpbb/php-ft-5.5-base:1 php/func-tests/5.5/base/
-phpbb/php-ft-5.6-base:1 php/func-tests/5.6/base/
+;phpbb/php-ut-5.4-postgres:3 php/unit-tests/5.4/postgres/
+;phpbb/php-ut-5.5-postgres:3 php/unit-tests/5.5/postgres/
+;phpbb/php-ut-5.6-postgres:3 php/unit-tests/5.6/postgres/
+;phpbb/php-ut-7.0-postgres:3 php/unit-tests/7.0/postgres/
 
-phpbb/php-ft-5.4-mysql:1 php/func-tests/5.4/mysql/
-phpbb/php-ft-5.5-mysql:1 php/func-tests/5.5/mysql/
-phpbb/php-ft-5.6-mysql:1 php/func-tests/5.6/mysql/
+;phpbb/php-ft-5.4-base:3 php/func-tests/5.4/base/
+;phpbb/php-ft-5.5-base:3 php/func-tests/5.5/base/
+;phpbb/php-ft-5.6-base:3 php/func-tests/5.6/base/
+;phpbb/php-ft-7.0-base:3 php/func-tests/7.0/base/
 
-phpbb/php-ft-5.4-postgres:1 php/func-tests/5.4/postgres/
-phpbb/php-ft-5.5-postgres:1 php/func-tests/5.5/postgres/
-phpbb/php-ft-5.6-postgres:1 php/func-tests/5.6/postgres/
+;phpbb/php-ft-5.4-sqlite:3 php/func-tests/5.4/sqlite/
+;phpbb/php-ft-5.5-sqlite:3 php/func-tests/5.5/sqlite/
+;phpbb/php-ft-5.6-sqlite:3 php/func-tests/5.6/sqlite/
+;phpbb/php-ft-7.0-sqlite:3 php/func-tests/7.0/sqlite/
 
-nicofuma/php-ut-5.4-oracle:1 php/unit-tests/5.4/oracle/
-nicofuma/php-ut-5.5-oracle:1 php/unit-tests/5.5/oracle/
-nicofuma/php-ut-5.6-oracle:1 php/unit-tests/5.6/oracle/
+;phpbb/php-ft-5.4-mysql:3 php/func-tests/5.4/mysql/
+;phpbb/php-ft-5.5-mysql:3 php/func-tests/5.5/mysql/
+;phpbb/php-ft-5.6-mysql:3 php/func-tests/5.6/mysql/
+;phpbb/php-ft-7.0-mysql:3 php/func-tests/7.0/mysql/
 
-nicofuma/php-ft-5.4-oracle:1 php/func-tests/5.4/oracle/
-nicofuma/php-ft-5.5-oracle:1 php/func-tests/5.5/oracle/
-nicofuma/php-ft-5.6-oracle:1 php/func-tests/5.6/oracle/
+;phpbb/php-ft-5.4-postgres:3 php/func-tests/5.4/postgres/
+;phpbb/php-ft-5.5-postgres:3 php/func-tests/5.5/postgres/
+;phpbb/php-ft-5.6-postgres:3 php/func-tests/5.6/postgres/
+;phpbb/php-ft-7.0-postgres:3 php/func-tests/7.0/postgres/
 
-phpbb/build:1 php/build/
+;nicofuma/php-ut-5.4-oracle:3 php/unit-tests/5.4/oracle/
+;nicofuma/php-ut-5.5-oracle:3 php/unit-tests/5.5/oracle/
+;nicofuma/php-ut-5.6-oracle:3 php/unit-tests/5.6/oracle/
+;nicofuma/php-ut-7.0-oracle:3 php/unit-tests/7.0/oracle/
+
+;nicofuma/php-ft-5.4-oracle:3 php/func-tests/5.4/oracle/
+;nicofuma/php-ft-5.5-oracle:3 php/func-tests/5.5/oracle/
+;nicofuma/php-ft-5.6-oracle:3 php/func-tests/5.6/oracle/
+;nicofuma/php-ft-7.0-oracle:3 php/func-tests/7.0/oracle/
+
+;phpbb/build:3 php/build/

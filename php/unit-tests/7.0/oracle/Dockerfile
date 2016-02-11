@@ -1,5 +1,8 @@
-FROM phpbb/php-ft-5.6-base:latest
+FROM php:7.0
 MAINTAINER Tristan Darricau <docker@nicofuma.fr>
+
+RUN addgroup --system atlassian --uid 1100
+RUN adduser --system --no-create-home --disabled-login --ingroup atlassian --uid 1100 atlassian
 
 RUN apt-get update \
 	&& apt-get install -y zip libaio1 \

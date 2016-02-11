@@ -44,12 +44,13 @@ then
     build_image "$image" "$buildfile"
     res=$?
 else
-    new=$(docker images|grep "$image"'[[:space:]]*1')
+    new=$(docker images|grep "$image"'[[:space:]]*'"$tag")
 
     # Has the required tag already been pushed?
     if [[ -z $new || $DOCKER_BUILD_FORCE == 1 ]]
     then
         build_image "$image:$tag" "$buildfile"
+        build_image "$image:latest" "$buildfile"
         res=$?
     else
         echo -e "\e[0;33mSkip $image:$tag\e[0m"
