@@ -15,7 +15,7 @@ RUN apt-get update -qq && apt-get install -qqy \
     iptables
 
 # Install Docker from Docker Inc. repositories.
-RUN curl -sSL https://test.docker.com/ | sh
+RUN curl -sSL https://get.docker.com/ | sh
 
 ADD wrapdocker /usr/local/bin/wrapdocker
 RUN chmod +x /usr/local/bin/wrapdocker
